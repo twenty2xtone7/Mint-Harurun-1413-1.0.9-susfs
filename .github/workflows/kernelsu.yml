@@ -1,4 +1,4 @@
-name: Update KernelSU-Next Submodule (by Zonkerus)
+name: Update KernelSU-Next (by Zonkerus)
 
 on:
   workflow_dispatch:
