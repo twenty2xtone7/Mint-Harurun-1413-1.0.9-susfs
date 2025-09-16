@@ -131,7 +131,7 @@ SET_ANDROIDVERSION() {
 }
 SET_LOCALVERSION() {
     local commit_hash=$(git rev-parse --short HEAD)
-    export LOCALVERSION=" - Harurun@$commit_hash"
+    export LOCALVERSION=" - twlvasix"
 }
 SET_ZIPNAME() {
     local MINT_TYPE MINT_SELINUX ONEUI_VERSION ROOT_SOLUTION
@@ -445,8 +445,6 @@ mkdir -p "$TMP_DIR"
 
 VERIFY_TOOLCHAIN
 VERIFY_DEFCONFIG
-
-git submodule update --init "$TOP/KernelSU"
 
 if $BUILD_KERNEL_CI; then
 	export KBUILD_BUILD_USER="Clembot"

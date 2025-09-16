@@ -33,7 +33,9 @@
 *.order
 *.patch
 *.s
+*.log
 *.so
+*.sh 
 *.so.dbg
 *.su
 *.symtypes
