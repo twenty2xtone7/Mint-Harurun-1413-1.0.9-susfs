@@ -3779,7 +3779,6 @@ struct mnt_namespace *copy_mnt_ns(unsigned long flags, struct mnt_namespace *ns,
 		// Let clone_mnt() in copy_tree() know copy_mnt_ns() is run by zygote process
 		copy_flags |= CL_ZYGOTE_COPY_MNT_NS;
 	}
-#endif	
 	new = copy_tree(old, old->mnt.mnt_root, copy_flags);
 #endif
 	if (IS_ERR(new)) {
